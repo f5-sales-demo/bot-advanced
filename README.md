@@ -1,3 +1,5 @@
+# Bot Advanced
+
 🌐 English |
 [日本語](https://f5-sales-demo.github.io/bot-advanced/ja/) |
 [한국어](https://f5-sales-demo.github.io/bot-advanced/ko/) |
@@ -11,8 +13,6 @@
 [العربية](https://f5-sales-demo.github.io/bot-advanced/ar/) |
 [हिन्दी](https://f5-sales-demo.github.io/bot-advanced/hi/) |
 [ไทย](https://f5-sales-demo.github.io/bot-advanced/th/)
-
-# Bot Advanced
 
 [![GitHub Pages Deploy](https://github.com/f5-sales-demo/bot-advanced/actions/workflows/github-pages-deploy.yml/badge.svg)](https://github.com/f5-sales-demo/bot-advanced/actions/workflows/github-pages-deploy.yml)
 [![Repository Settings](https://github.com/f5-sales-demo/bot-advanced/actions/workflows/enforce-repo-settings.yml/badge.svg)](https://github.com/f5-sales-demo/bot-advanced/actions/workflows/enforce-repo-settings.yml)
