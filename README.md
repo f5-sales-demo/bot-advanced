@@ -22,7 +22,7 @@ F5 XC advanced bot defense
 
 ## Documentation
 
-Full documentation is available at **[https://f5-sales-demo.github.io/bot-advanced/](https://f5-sales-demo.github.io/bot-advanced/)**.
+Full documentation is available at __[https://f5-sales-demo.github.io/bot-advanced/](https://f5-sales-demo.github.io/bot-advanced/)__.
 
 ## Contributing
 
