@@ -1,11 +1,48 @@
 ---
-title: Bot Advanced
-description: Advanced bot defense with behavioral analysis for F5 Distributed Cloud.
-hero:
-  tagline: Advanced bot defense with behavioral analysis.
-  image:
-    html: '<img src="/bot-advanced/images/hero.svg" alt="F5 XC Bot Advanced" />'
-sidebar:
-  hidden: true
-  order: 0
+title: F5 Distributed Cloud Bot Defense Advanced
+description: Behavioral AI telemetry, client fingerprinting, headless browser detection, and automated mitigation.
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+**F5 Distributed Cloud Bot Defense Advanced** delivers real-time protection against sophisticated automated attacks. Powered by Shape Security artificial intelligence (AI) and telemetry engine, it differentiates between legitimate human interactions and automated tooling attempting credential stuffing, account takeover, inventory hoarding, and API scraping.
+
+## Telemetry & Behavioral Pipeline
+
+```text
++-------------------------------------------------------------------------+
+|                  Advanced Behavioral AI Telemetry Flow                  |
+|                                                                         |
+|  1. HTML Request --> Inject Dynamic Telemetry JavaScript                |
+|  2. Browser Execution --> Collect DOM, Hardware, Canvas, Mouse Signals  |
+|  3. Protected POST/API --> Interrogate Telemetry Beacon Payload         |
+|  4. Cloud AI Analysis --> Score Client Authenticity (Human vs Bot)      |
+|  5. Mitigation Decision --> Allow, Challenge (CAPTCHA), Block, Flag     |
++-------------------------------------------------------------------------+
+```
+
+## Attack Coverage
+
+<CardGrid>
+  <Card title="Credential Stuffing" icon="seti:lock">
+    Stops automated credential testing against login endpoints using compromised password databases.
+  </Card>
+  <Card title="Account Takeover (ATO)" icon="seti:shield">
+    Protects user profile management, password resets, and high-value transactions.
+  </Card>
+  <Card title="Inventory Hoarding" icon="star">
+    Prevents checkout bots from depleting limited inventory or ticket allocations.
+  </Card>
+  <Card title="API Reverse Engineering" icon="puzzle">
+    Identifies headless browser frameworks (Puppeteer, Playwright, Selenium) bypassing standard WAFs.
+  </Card>
+</CardGrid>
+
+## Mitigation Actions
+
+| Action | Execution Mechanism | Latency Impact |
+| :--- | :--- | :--- |
+| **Allow** | Forward request directly to backend origin server. | < 5 ms |
+| **Block** | Return HTTP 403 Forbidden with security event reference ID. | 0 ms to origin |
+| **Redirect** | Return HTTP 302 redirecting client to verification or landing URL. | 0 ms to origin |
+| **Custom Header Injection** | Forward request to origin with `X-F5-Bot-Score: <SCORE>` header. | < 5 ms |
